@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Movie Website</title>
+    <link rel="stylesheet" href="mystyles.css" />
+    <script src="login.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Login.html">Login</a></li>
+          <li><a href="Signup.html">Sign Up</a></li>
+          <li><a href="Movies.html">Movies</a></li>
+          <li><a href="About2.html">About</a></li>
+          <li><a href="Contact2.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="login-section">
+      <h2>Login</h2>
+      <form onsubmit="validateLogin(event)">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+
+        <button type="submit">Login</button>
+      </form>
+    </section>
+  </body>
+</html>

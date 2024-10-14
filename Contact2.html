@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - My Website</title>
+    <link rel="stylesheet" href="MyStyles.css" />
+    <script src="contact_validation.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Login.html">Login</a></li>
+          <li><a href="Signup.html">Sign Up</a></li>
+          <li><a href="Movies.html">Movies</a></li>
+          <li><a href="About2.html">About</a></li>
+          <li><a href="Contact2.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h2>Contact Us</h2>
+      <form onsubmit="validateContactForm(event)">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+        <div id="name-error" class="error-message"></div>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <div id="email-error" class="error-message"></div>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <div id="message-error" class="error-message"></div>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </body>
+</html>
